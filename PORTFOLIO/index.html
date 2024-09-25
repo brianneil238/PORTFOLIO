@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Brian Neil M. Babasa</a>
+
+        <!-- Burger menu icon (top-right) -->
+        <div class="navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Navigation links -->
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="Main Image">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm <span class="name">Brian Neil</span></h1>
+            <h3 class="typing-text">I'm a <span class="course">Business Analytics Student <span></span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/brian-neil-babasa-409089328/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/brianneil238" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/brianbabasa" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/brianneil.babasa" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I have a solid foundation in C++, C#, SQL databases, and HTML, which has allowed me to work on various academic and practical projects. My passion lies in utilizing technology to analyze and interpret business data to drive strategic decision-making. I am continually seeking opportunities to expand my skills and apply them in real-world scenarios.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+            </div>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1 Image" class="project-img">
+                <!-- Add the buttons under the image -->
+                <div class="project-links">
+                    <a href="https://drive.google.com/drive/folders/153kfE0g5yEmgW_k5ZUgxTcsvJgdB57bA?usp=sharing" class="btn" target="_blank"> Survey Form (Index and Style)</a>
+                </div>
+            </div>            
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+                <div class="project-links">
+                    <a href="https://drive.google.com/drive/folders/1Ni1RR_jfOJuEDGmfUVktw2fHA7tQA4Sq?usp=sharing" class="btn" target="_blank">First Trial (HTML & CSS)</a>
+                </div>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch with me, please use the contact number or reach out via email.</p>
+        <p></p>
+        <p>Phone Number: +639568570645</p>
+        <p>Email: brianneil238@gmail.com</p>
+        <p>G-Suite: 22-34005@g.batstate-u.edu.ph</p>
+    </section>
+
+
+    <script>
+        const toggle = document.querySelector('.navbar-toggle');
+        const nav = document.querySelector('nav');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

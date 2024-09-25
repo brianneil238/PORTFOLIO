@@ -1,0 +1,342 @@
+/* General styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #5299e0;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: paleturquoise;
+    color: #eacaca;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
+.name{
+    color:#ffffff;
+    transition: color 0.3s ease;
+  
+}
+.name:hover{
+    color:rgb(51, 29, 148);
+   
+}
+
+/* Logo hover effect */
+header .logo:hover {
+    color: #1e1262; 
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.course{
+    color:#ffffff;
+    transition: color 0.3 ease;
+}
+
+.course:hover{
+    color: rgb(51, 29, 148);
+}
+/* Navigation styling */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5299e0;
+    padding: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav a:hover,
+nav a.active {
+    color: #1e1262;
+}
+
+/* Burger menu icon (top-right) */
+.navbar-toggle {
+    font-size: 1.5rem;
+    color: #000000;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Home section */
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+}
+
+.home-img img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+/* Image hover effect */
+.home-img img:hover {
+    transform: scale(1.05); 
+}
+
+/* Home content styling */
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.home-content h3 {
+    font-size: 1.5rem;
+}
+
+.home-content p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Social icons styling */
+.social-icons a {
+    font-size: 2rem;
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #1e1262;
+}
+
+.social-icons {
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+.btn {
+    padding: 10px 20px;
+    background-color: #1e1262;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 70px;
+}
+
+.btn:hover {
+    background-color: dodgerblue;
+}
+
+/* About Me Section */
+.about {
+    padding: 50px;
+    background-color: #96bde4;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px;
+    background-color: #7bbce1;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+}
+.project {
+    text-align: center; /* Center the image and buttons */
+    margin-bottom: 20px; /* Add space between projects */
+}
+
+.project .project-img {
+    width: 100%; /* Ensure the image is responsive */
+    max-width: 300px; /* Set the max width to make the image smaller */
+    height: auto;
+    margin-bottom: 10px; /* Space between image and buttons */
+}
+
+.project-links {
+    margin-top: 10px; /* Add space between buttons */
+}
+
+.project-links .btn {
+    padding: 10px 20px;
+    background-color: #1e1262;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block; /* Ensure the buttons are inline */
+}
+
+.project-links .btn:hover {
+    background-color: dodgerblue;
+}
+
+
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: #2290de;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+.contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Media Queries for Desktop (Windows) View */
+@media (min-width: 1024px) {
+    nav {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .navbar-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content h3 {
+        font-size: 1rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+    }
+
+    .home-img img {
+        max-width: 80%;
+    }
+}
